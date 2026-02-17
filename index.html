@@ -3,97 +3,115 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Portal do Curso Técnico | Materiais e Projetos</title>
+  <title>Portal do Curso Técnico | Desenvolvimento de Software</title>
 
-  <style>
-    body { margin:0; font-family: Arial, sans-serif; background:#f4f6f9; }
-    header { background:#1f3c88; color:#fff; padding:24px 16px; text-align:center; }
-    header p { margin:8px 0 0; opacity:.9; }
-
-    main { max-width: 1100px; margin: 0 auto; padding: 24px 16px; }
-    .grid { display:grid; gap:16px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
-
-    .card {
-      background:#fff; border-radius:12px; padding:16px;
-      box-shadow: 0 4px 12px rgba(0,0,0,.08);
-      display:flex; flex-direction:column; gap:10px;
-    }
-    .card h3 { margin:0; color:#1f3c88; }
-    .card p { margin:0; color:#333; opacity:.9; }
-    .btn {
-      margin-top:auto;
-      display:inline-block; text-align:center;
-      background:#1f3c88; color:#fff; text-decoration:none;
-      padding:10px 12px; border-radius:8px; font-weight:bold;
-    }
-    .btn:hover { filter: brightness(.95); }
-
-    footer { text-align:center; padding:16px; color:#555; }
-  </style>
+  <!-- CSS separado -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header>
-    <h1>Portal do Curso Técnico</h1>
-    <p>Materiais de aula • Portfólio de projetos • Arquivos para download</p>
+    <div class="wrap">
+      <div class="topbar">
+        <div class="brand">
+          <div class="logo">&lt;/&gt;</div>
+          <div class="title">
+            <h1>Portal do Curso Técnico</h1>
+            <p>Ambiente de materiais, projetos e arquivos — foco em <strong>Desenvolvimento de Software</strong></p>
+          </div>
+        </div>
+
+        <div class="pill">
+          <span class="dot"></span>
+          Publicado em <strong>raquel485.github.io</strong>
+        </div>
+      </div>
+    </div>
   </header>
 
   <main>
-    <h2>Componentes (8)</h2>
-    <p>Clique em um componente para acessar materiais e projetos.</p>
+    <div class="wrap">
+      <section class="hero">
+        <div class="card">
+          <h2>📌 Como usar este portal</h2>
+          <p>
+            Escolha um componente para acessar <strong>materiais</strong>, <strong>atividades</strong>,
+            <strong>portfólio</strong> e <strong>downloads</strong>. Você pode organizar por aula/semana,
+            e anexar PDFs na pasta <span class="kbd">materiais/</span>.
+          </p>
+        </div>
 
-    <section class="grid">
-      <!-- Troque os nomes e descrições como quiser -->
-      <article class="card">
-        <h3>1) Componente 01</h3>
-        <p>Materiais, atividades e projetos.</p>
-        <a class="btn" href="comp01.html">Acessar</a>
-      </article>
+        <div class="card">
+          <h2>💡 Estrutura sugerida</h2>
+          <p>
+            <span class="kbd">front1.html</span> • <span class="kbd">back-end.html</span> • <span class="kbd">banco-dados.html</span><br/>
+            Pastas: <span class="kbd">materiais/front1/</span>, <span class="kbd">materiais/bd/</span>…
+          </p>
+        </div>
+      </section>
 
-      <article class="card">
-        <h3>2) Componente 02</h3>
-        <p>Materiais, atividades e projetos.</p>
-        <a class="btn" href="comp02.html">Acessar</a>
-      </article>
+      <section class="grid">
+        <article class="component">
+          <div class="badge"><span class="mini"></span> Componente 01</div>
+          <h3>Desenvolvimento Front-End I</h3>
+          <p>HTML, CSS, fundamentos de UI e primeiros scripts.</p>
+          <a class="btn" href="front1.html"><span>></span> Acessar</a>
+        </article>
 
-      <article class="card">
-        <h3>3) Componente 03</h3>
-        <p>Materiais, atividades e projetos.</p>
-        <a class="btn" href="comp03.html">Acessar</a>
-      </article>
+        <article class="component">
+          <div class="badge"><span class="mini"></span> Componente 02</div>
+          <h3>Desenvolvimento Front-End II</h3>
+          <p>Layouts responsivos, componentes, boas práticas e projetos.</p>
+          <a class="btn" href="front2.html"><span>></span> Acessar</a>
+        </article>
 
-      <article class="card">
-        <h3>4) Componente 04</h3>
-        <p>Materiais, atividades e projetos.</p>
-        <a class="btn" href="comp04.html">Acessar</a>
-      </article>
+        <article class="component">
+          <div class="badge"><span class="mini"></span> Componente 03</div>
+          <h3>Cultura Digital e Fundamentos de IA</h3>
+          <p>Letramento digital, pensamento computacional e IA introdutória.</p>
+          <a class="btn" href="cultura-ia.html"><span>></span> Acessar</a>
+        </article>
 
-      <article class="card">
-        <h3>5) Componente 05</h3>
-        <p>Materiais, atividades e projetos.</p>
-        <a class="btn" href="comp05.html">Acessar</a>
-      </article>
+        <article class="component">
+          <div class="badge"><span class="mini"></span> Componente 04</div>
+          <h3>Banco de Dados</h3>
+          <p>Modelagem, SQL, consultas, CRUD e organização dos dados.</p>
+          <a class="btn" href="banco-dados.html"><span>></span> Acessar</a>
+        </article>
 
-      <article class="card">
-        <h3>6) Componente 06</h3>
-        <p>Materiais, atividades e projetos.</p>
-        <a class="btn" href="comp06.html">Acessar</a>
-      </article>
+        <article class="component">
+          <div class="badge"><span class="mini"></span> Componente 05</div>
+          <h3>Algoritmo e Estrutura de Dados</h3>
+          <p>Raciocínio lógico, fluxogramas, vetores, funções e estruturas.</p>
+          <a class="btn" href="aed.html"><span>></span> Acessar</a>
+        </article>
 
-      <article class="card">
-        <h3>7) Componente 07</h3>
-        <p>Materiais, atividades e projetos.</p>
-        <a class="btn" href="comp07.html">Acessar</a>
-      </article>
+        <article class="component">
+          <div class="badge"><span class="mini"></span> Componente 06</div>
+          <h3>Desenvolvimento Back-End</h3>
+          <p>Rotas, APIs, validação, persistência e segurança básica.</p>
+          <a class="btn" href="back-end.html"><span>></span> Acessar</a>
+        </article>
 
-      <article class="card">
-        <h3>8) Componente 08</h3>
-        <p>Materiais, atividades e projetos.</p>
-        <a class="btn" href="comp08.html">Acessar</a>
-      </article>
-    </section>
+        <article class="component">
+          <div class="badge"><span class="mini"></span> Componente 07</div>
+          <h3>Desenvolvimento de Software</h3>
+          <p>Engenharia de software, requisitos, versionamento e testes.</p>
+          <a class="btn" href="dev-software.html"><span>></span> Acessar</a>
+        </article>
+
+        <article class="component">
+          <div class="badge"><span class="mini"></span> Componente 08</div>
+          <h3>Desenvolvimento de Aplicativos</h3>
+          <p>Apps, prototipação, interfaces, dados e publicação.</p>
+          <a class="btn" href="apps.html"><span>></span> Acessar</a>
+        </article>
+      </section>
+    </div>
   </main>
 
-  <footer>© 2026 • Portal do Curso Técnico</footer>
+  <footer>
+    © 2026 • Portal do Curso Técnico • Identidade visual: Desenvolvimento de Software
+  </footer>
 </body>
 </html>
